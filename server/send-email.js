@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { Resend } = require('resend');
 
-const resend = new Resend('re_X2MytDch_QJA6Z7yohoK3fhBFRk6TpHUe'); // use your onboarding key
+const resend = new Resend(process.env.RESEND_API_KEY); // use environment variable
 
 const app = express();
 app.use(cors());
