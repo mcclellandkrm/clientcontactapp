@@ -28,12 +28,23 @@ const App: React.FC = () => {
     if (!clientDetails || !selectedTemplate) return;
     setSending(true);
     setError(null);
+
+    // Split TO and CC fields by semicolon
+    const to = clientDetails.business_email
+      .split(';')
+      .map((email: string) => email.trim())
+      .filter((email: string) => email.length > 0);
+
+    const copy_to = clientDetails.copy_to
+  ? clientDetails.copy_to.split(';').map((email: string) => email.trim()).filter((email: string) => email.length > 0)
+  : undefined;
+
     try {
-      // Save record in Supabase
+      // Save record in Supabase (as before)
       const { error } = await supabase.from('clientcontact').insert([
         {
           ...clientDetails,
-          return_date: clientDetails.return_date || null, // <-- this is the fix
+          return_date: clientDetails.return_date || null,
         }
       ]);
       if (error) throw error;
@@ -43,7 +54,8 @@ const App: React.FC = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          to: clientDetails.business_email, // this will be ignored for now
+          to,
+          cc: copy_to, // <-- use copy_to here
           subject,
           body,
         }),

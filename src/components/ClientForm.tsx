@@ -19,7 +19,8 @@ const initialState: ClientDetails = {
   notes: '',
   business_type: '',
   business_location: '',
-  return_date: ''
+  return_date: '',
+  copy_to: '', // <-- Add this line
 };
 
 const ClientForm: React.FC<ClientFormProps> = ({
@@ -90,7 +91,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
         value={form.business_email}
         onChange={handleChange}
         style={inputStyle}
-        type="email"
+        type="text"
         required
       />
       <input
@@ -125,6 +126,13 @@ const ClientForm: React.FC<ClientFormProps> = ({
         style={inputStyle}
         type="date"
       />
+      <input
+  name="copy_to"
+  placeholder="CC (semicolon separated)"
+  value={form.copy_to}
+  onChange={handleChange}
+  style={inputStyle}
+/>
       <select
         value={selectedTemplateId}
         onChange={e => onTemplateChange(e.target.value)}

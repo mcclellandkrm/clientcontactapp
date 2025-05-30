@@ -9,12 +9,13 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/send-email', async (req, res) => {
-  const { to, subject, body } = req.body;
+  const { to, subject, body, cc } = req.body;
   // No need to replace \n with <br> anymore!
   try {
     const data = await resend.emails.send({
   from: 'karl@360spaces.co.uk',
-  to, // now dynamic!
+  to,
+  cc: cc && cc.length ? cc : undefined, // only include if provided
   subject,
   html: body,
 });
