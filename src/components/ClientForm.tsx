@@ -46,16 +46,19 @@ const ClientForm: React.FC<ClientFormProps> = ({
 
   return (
     <form
-      onSubmit={handleNext}
-      style={{
-        background: '#c3d82e',
-        borderRadius: '16px',
-        padding: '2em',
-        width: 350,
-        margin: '2em auto',
-        fontFamily: 'sans-serif',
-        boxSizing: 'border-box'
-      }}
+  onSubmit={handleNext}
+  style={{
+    backgroundImage: 'url("https://karlmcclelland.com/sig/appbackground.jpg")', // <-- your image path
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    borderRadius: '16px',
+    padding: '2em',
+    width: 350,
+    margin: '2em auto',
+    fontFamily: 'sans-serif',
+    boxSizing: 'border-box'
+  }}
+
     >
       <div style={{ textAlign: 'left', marginBottom: '1em' }}>
         <img src={logo} alt="360spaces Logo" style={{ height: 40, marginBottom: 10 }} />
@@ -95,6 +98,13 @@ const ClientForm: React.FC<ClientFormProps> = ({
         required
       />
       <input
+  name="copy_to"
+  placeholder="CC (semicolon separated)"
+  value={form.copy_to}
+  onChange={handleChange}
+  style={inputStyle}
+/>
+      <input
         name="telephone"
         placeholder="Phone"
         value={form.telephone}
@@ -126,13 +136,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
         style={inputStyle}
         type="date"
       />
-      <input
-  name="copy_to"
-  placeholder="CC (semicolon separated)"
-  value={form.copy_to}
-  onChange={handleChange}
-  style={inputStyle}
-/>
+      
       <select
         value={selectedTemplateId}
         onChange={e => onTemplateChange(e.target.value)}
@@ -146,7 +150,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
       </select>
       <textarea
         name="notes"
-        placeholder="Notes"
+        placeholder="Any notes?"
         value={form.notes}
         onChange={handleChange}
         style={{ ...inputStyle, minHeight: 60 }}
@@ -166,7 +170,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
           cursor: 'pointer'
         }}
       >
-        Next
+        Next and Send
       </button>
     </form>
   );
