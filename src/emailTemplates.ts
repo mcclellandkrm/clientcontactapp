@@ -157,7 +157,7 @@ ${emailSignature}
     body: `<p>Dear {first_name},</p>
 <p>I'm Karl, a Belfast-based virtual tour photographer and Google partner. I’d love to help {business_name} stand out online with a high-quality Google 360° virtual tour.</p>
 <p>Restaurants, cafes, and bars I've worked with have used their tours to showcase atmosphere, increase bookings, and bring in more footfall, especially from people searching nearby. It’s a proven way to make a great first impression. Learn more and see a special offer here:<a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in the {business_location} area on {date_of_return} and would be happy to stop by for a quick chat/site visit and maybe take some test photographs (at no cost).</p>
+<p>I’ll be in the {business_location} area on {return_date} and would be happy to stop by for a quick chat/site visit and maybe take some test photographs (at no cost).</p>
 <p>The one-time fee includes photography, tour creation, and integration with your Google Business profile. There are no ongoing costs unless you would prefer a more custom, bespoke virtual tour.</p>
 <p>Let me know if you’d like to schedule a time or ask anything. I’d love to show you what’s possible.</p>
 <p>Best regards,<br>Karl</p>
@@ -171,7 +171,7 @@ ${emailSignature}
     body: `<p>Hello {first_name},</p>
 <p>I’m Karl, a Belfast-based virtual tour photographer and Google partner. I’d love to help showcase the character of {business_name} with a 360° virtual tour.</p>
 <p>Independent shops often have a unique story and space and a virtual tour brings that to life online and helps you get discovered on Google and Maps. You can see the benefits and an intro offer here: <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in the {business_location} area on {date_of_return} and would be happy to call in for a quick chat and maybe take some test shots.</p>
+<p>I’ll be in the {business_location} area on {return_date} and would be happy to call in for a quick chat and maybe take some test shots.</p>
 <p>The price includes everything: photography, tour creation, and linking the finished tour to your Google business presence. No extra fees or subscriptions unless you preferred a more bespoke virtual tour.</p>
 <p>Let me know if you’re interested. I’m happy to answer any questions.</p>
 <p>All the best,<br>Karl</p>
@@ -185,7 +185,7 @@ ${emailSignature}
     body: `<p>Hello {first_name},</p>
 <p>I'm Karl, a Belfast-based Google-certified photographer specialising in 360° virtual tours. I'd love to help showcase {business_name} with a virtual tour linked to your Google profile.</p>
 <p>Fast food decisions are made quickly, hence the name… and visual content plays a huge role. A virtual tour lets potential customers see your clean, welcoming space, helping you stand out online. Take a look at the benefits and a limited-time offer: <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in the {business_location} area on {date_of_return} and would be happy to stop in for a brief chat, to explain how it works and perhaps take some test photos.</p>
+<p>I’ll be in the {business_location} area on {return_date} and would be happy to stop in for a brief chat, to explain how it works and perhaps take some test photos.</p>
 <p>The price includes everything: photography, tour creation, and linking the finished tour to your Google business presence. No extra fees or subscriptions unless you would prefer a more bespoke virtual tour.</p>
 <p>Just reply and we can get a date booked in.</p>
 <p>Thanks and hope to speak soon,<br>Karl</p>
@@ -199,7 +199,7 @@ ${emailSignature}
     body: `<p>Dear {first_name},</p>
 <p>I'm Karl, a Belfast-based Google Maps / Street View photographer, and I’d love to talk about creating a virtual tour for {business_name}.</p>
 <p>Showrooms rely on strong visual impact and a 360° tour helps potential customers explore your space from home (or anywhere). It's perfect for highlighting layout, product displays, and style. You can explore the key benefits here: <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in the {business_location} area on {date_of_return} and can drop by to show examples, answer any questions and perhaps take some test photos for you.</p>
+<p>I’ll be in the {business_location} area on {return_date} and can drop by to show examples, answer any questions and perhaps take some test photos for you.</p>
 <p>The price includes everything: photography, tour creation, and linking the finished tour to your Google business presence. No extra fees or subscriptions unless you would prefer a more bespoke virtual tour.</p>
 <p>Let me know if you'd be interested in exploring this further.</p>
 <p>Warm regards,</p>
@@ -213,7 +213,7 @@ ${emailSignature}
     body: `<p>Dear {first_name},</p>
 <p>I’m Karl, a Google Street View photographer based in Belfast, and I specialise in 360° virtual tours for dealerships like {business_name}.</p>
 <p>A virtual tour lets people explore your showroom and forecourt before they visit which builds trust, a better understanding of the business and encourages them to call in. My clients often see improved visibility and engagement. See how it works here: <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in the {business_location} area on {date_of_return} and would love to arrange a quick meeting with you or your sales/showroom manager.</p>
+<p>I’ll be in the {business_location} area on {return_date} and would love to arrange a quick meeting with you or your sales/showroom manager.</p>
 <p>The price includes everything: photography, tour creation, and linking the finished tour to your Google business presence. No extra fees or subscriptions unless you would prefer a more bespoke virtual tour.</p>
 <p> Let me know if you'd be interested in exploring this further.</p>
 <p>Best,<br>Karl</p>
@@ -227,7 +227,7 @@ ${emailSignature}
     body: `<p>Hello {first_name},</p>
 <p>I’m Karl, a Belfast-based virtual tour specialist and Google partner. I’d like to propose the offer of a 360° virtual tour for {business_name} that helps put clients at ease and familiarise themselves before they arrive.</p>
 <p>For clinics/wellness spaces, a tour promotes transparency and comfort, especially for first-time patients. It’s a great way to build trust online. See how it works and view an offer here: <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be near {business_location} on {date_of_return} and would be glad to visit for a quick consultation, answer any questions and perhaps take some test photos.</p>
+<p>I’ll be near {business_location} on {return_date} and would be glad to visit for a quick consultation, answer any questions and perhaps take some test photos.</p>
 <p>The price includes everything: photography, tour creation, and linking the finished tour to your Google business presence. No extra fees or subscriptions unless you would prefer a more bespoke virtual tour.</p>
 <p> Let me know if you'd be interested in exploring this further.</p>
 <p>Kind regards,<br>Karl</p>
@@ -241,7 +241,7 @@ ${emailSignature}
     body: `<p>Hello {first_name},</p>
 <p>I’m Karl, a Belfast-based Google-certified virtual tour photographer. I’d like to offer a 360° tour for {business_name} that enhances your office profile and builds online trust.</p>
 <p>Estate agencies benefit hugely from office tours that welcome clients to custom property walk-throughs. I offer both in superb high-quality. Learn more and view a current offer here: <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in {business_location} on {date_of_return} and would be happy to stop by for a quick overview of the options.</p>
+<p>I’ll be in {business_location} on {return_date} and would be happy to stop by for a quick overview of the options.</p>
 <p>The price includes everything: photography, tour creation, and linking the finished tour to your Google business presence. No extra fees or subscriptions unless you would prefer a more bespoke virtual tour.</p>
 <p> Let me know if you'd be interested in exploring this further.</p>
 <p>Kind regards,<br>Karl</p>
@@ -255,7 +255,7 @@ ${emailSignature}
     body: `<p>Hello {first_name},</p>
 <p>I’m Karl, a Belfast-based virtual tour photographer and Google partner. I’d like to introduce myself and explore the idea of creating a 360° virtual tour for {business_name}.</p>
 <p>Independent businesses like yours are full of character and a virtual tour helps bring that charm online, giving people a reason to visit in person. You can see more about the key benefits and a current offer here: <a href=https://karlmcclelland.carrd.co/>https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be visiting the {business_location} area on {date_of_return} and would be happy to meet for a brief, no-obligation chat and maybe take some test photos.</p>
+<p>I’ll be visiting the {business_location} area on {return_date} and would be happy to meet for a brief, no-obligation chat and maybe take some test photos.</p>
 <p>The price includes everything: photography, tour creation, and linking/connecting the finished tour to your Google business presence. No extra fees or subscriptions unless you would prefer a more bespoke virtual tour.</p>
 <p>Kind regards,<br>Karl</p>
 ${emailSignature}
@@ -268,7 +268,7 @@ ${emailSignature}
     body: `<p>Hello {first_name},</p>
 <p>I’m Karl, a Belfast-based virtual tour photographer and Google partner. I’d love to introduce myself and explore the idea of creating a 360° Google virtual tour for {business_name}.</p>
 <p>Gyms and training spaces are best experienced physically and visually and a virtual tour lets people explore your facilities, equipment, and find out more about the layout and atmosphere/vibe before they visit or join. It helps build trust and drives new memberships. You can see more about the benefits and current offers here: <a href=https://karlmcclelland.carrd.co/>https://karlmcclelland.carrd.co/</a></p>
-<p>I’ll be in the {business_location} area on {date_of_return} and would be happy to stop by for a brief, no-obligation chat, answer any questions and perhaps take some test photos.</p>
+<p>I’ll be in the {business_location} area on {return_date} and would be happy to stop by for a brief, no-obligation chat, answer any questions and perhaps take some test photos.</p>
 <p>The cost is all-inclusive: professional photography, virtual tour build, and full integration with your Google listing. No subscriptions or ongoing fees unless you would be more interested in something more bespoke.</p>
 <p>If you're interested or curious, just reply and we’ll line something up.</p>
 <p>Kind regards,</p>
@@ -279,10 +279,12 @@ ${emailSignature}
   // Add more templates here
 ];
 
+import { formatDate } from './utils/dateUtils';
+
 export const fillTemplate = (template: string, details: any) => {
   return template
     .replace(/{first_name}/g, details.first_name || '')
     .replace(/{business_name}/g, details.business_name || '')
     .replace(/{business_location}/g, details.business_location || '')
-    .replace(/{return_visit}/g, details.return_date || '');
+    .replace(/{return_date}/g, formatDate(details.return_date || ''));
 };
