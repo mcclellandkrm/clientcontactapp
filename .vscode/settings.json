@@ -1,3 +1,3 @@
 {
-    "terminal.integrated.cwd": "D:\\01_VSCODE\\clientcontactapp"
+    "terminal.integrated.shellIntegration.environmentReporting": true
 }

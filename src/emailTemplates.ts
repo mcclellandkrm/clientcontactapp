@@ -88,7 +88,7 @@ export const emailSignature = `
   </tr>
   <tr>
     <td colspan="2" style="padding-bottom: 10px;">
-      <div style="font-size: 14px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 16px; margin-bottom: 15px;">
+      <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 15px;">
         Take advantage of our Google Street View Virtual Tour offer today. Click here for more information on the benefits this can offer to your business.<br><br>
         <a href="https://karlmcclelland.carrd.co/" style="color: #666666; text-decoration: underline;">https://karlmcclelland.carrd.co/</a>
       </div>
