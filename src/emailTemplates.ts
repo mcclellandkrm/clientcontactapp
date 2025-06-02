@@ -13,7 +13,7 @@ export const emailSignature = `
     </td>
     <td style="padding-bottom: 5px; vertical-align: top; width: 50%;">
       <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
-        Professional Virtual Tour Creator<br>and Google Street View Partner
+        Professional Virtual Tour Creator<br>and Trusted Google Street View Partner
       </div>
     </td>
   </tr>
