@@ -5,7 +5,9 @@ const { Resend } = require('resend');
 const resend = new Resend(process.env.RESEND_API_KEY); // use environment variable
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://magical-beignet-f0bfea.netlify.app'
+}));
 app.use(express.json());
 
 app.post('/send-email', async (req, res) => {
