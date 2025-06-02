@@ -12,7 +12,7 @@ export const emailSignature = `
       </div>
     </td>
     <td style="padding-bottom: 5px; vertical-align: top; width: 50%;">
-      <div style="font-size: 14px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
+      <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
         Professional Virtual Tour Creator<br>and Google Street View Partner
       </div>
     </td>
@@ -23,13 +23,13 @@ export const emailSignature = `
         <tr>
           <td style="vertical-align: middle; width: 50%; padding-right: 10px;">
             <img src="https://karlmcclelland.com/sig/phone_logo.png" width="auto" height="50" style="border: none; vertical-align: middle; margin-right: 8px;">
-            <span style="font-size: 14px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
+            <span style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
               <a href="tel:+447960044486" style="color: #333333; text-decoration: none;">+44 7960 044 486</a>
             </span>
           </td>
           <td style="vertical-align: middle; width: 50%; padding-left: 10px;">
             <img src="https://karlmcclelland.com/sig/email_logo.png" width="35" height="35" style="border: none; vertical-align: middle; margin-right: 8px;">
-            <span style="font-size: 14px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
+            <span style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
               <a href="mailto:karl@360spaces.co.uk" style="color: #333333; text-decoration: none;">karl@360spaces.co.uk</a>
             </span>
           </td>
@@ -37,7 +37,7 @@ export const emailSignature = `
         <tr>
           <td style="padding-top: 10px; padding-bottom: 15px;">
             <img src="https://karlmcclelland.com/sig/internet_icon.png" width="35" height="35" style="border: none; vertical-align: middle; margin-right: 8px;">
-            <span style="font-size: 14px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
+            <span style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
               <a href="https://360spaces.co.uk/" target="_blank" style="color: #333333; text-decoration: none;">360spaces.co.uk</a>
             </span>
           </td>
@@ -48,7 +48,7 @@ export const emailSignature = `
   </tr>
   <tr>
     <td colspan="2" style="padding-top: 15px; padding-bottom: 10px;">
-      <div style="font-size: 14px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 16px; margin-bottom: 15px;">
+      <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 16px; margin-bottom: 15px;">
         Google Street View Virtual Tours - Bespoke Virtual Tours - Aerial and Commercial Photography - Short-form and Social Media Production • Social Media Mgt
       </div>
     </td>
