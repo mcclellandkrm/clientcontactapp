@@ -163,30 +163,34 @@ const App: React.FC = () => {
               cursor: 'pointer'
             }}
           >
-            Back to Menu
+            Main Menu
           </button>
           <button
-      onClick={() => {
-        setClientDetails(null);
-        setSelectedTemplateId('');
-        setScreen(lastAction === 'send' ? 'send' : 'add');
-      }}
-      style={{
-        marginTop: 12,
-        width: '100%',
-        padding: '0.5em',
-        background: '#fff',
-        color: '#333',
-        border: 'none',
-        borderRadius: 3,
-        fontWeight: 600,
-        fontSize: 16,
-        cursor: 'pointer'
-      }}
-    >
-      Send Another
-    </button>
-  </div>
-)}
+            onClick={() => {
+              setClientDetails(null);
+              setSelectedTemplateId('');
+              setScreen(lastAction === 'send' ? 'send' : 'add');
+            }}
+            style={{
+              marginTop: 12,
+              width: '100%',
+              padding: '0.5em',
+              background: '#fff',
+              color: '#333',
+              border: 'none',
+              borderRadius: 3,
+              fontWeight: 600,
+              fontSize: 16,
+              cursor: 'pointer'
+            }}
+          >
+            Send Another
+          </button>
+        </div>
+      )}
+
+    </div>
+  );
+}
 
 export default App;
