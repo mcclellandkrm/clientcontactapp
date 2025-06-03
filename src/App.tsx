@@ -142,10 +142,10 @@ const App: React.FC = () => {
           boxSizing: 'border-box',
           textAlign: 'center'
         }}>
-          <h2>Success!</h2>
+          <h2>We have a winner</h2>
           <p>
             {lastAction === 'send'
-              ? `That is now winging its way to ${clientDetails?.business_email}.`
+              ? `That is now winging its way to ${clientDetails?.business_email}`
               : 'Record saved for later.'}
           </p>
           <button
@@ -165,10 +165,28 @@ const App: React.FC = () => {
           >
             Back to Menu
           </button>
-        </div>
-      )}
-    </div>
-  );
-};
+          <button
+      onClick={() => {
+        setClientDetails(null);
+        setSelectedTemplateId('');
+        setScreen(lastAction === 'send' ? 'send' : 'add');
+      }}
+      style={{
+        marginTop: 12,
+        width: '100%',
+        padding: '0.5em',
+        background: '#fff',
+        color: '#333',
+        border: 'none',
+        borderRadius: 3,
+        fontWeight: 600,
+        fontSize: 16,
+        cursor: 'pointer'
+      }}
+    >
+      Send Another
+    </button>
+  </div>
+)}
 
 export default App;
