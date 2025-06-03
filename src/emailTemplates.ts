@@ -1,4 +1,12 @@
 export const emailSignature = `
+<style>
+@media only screen and (max-width: 600px) {
+  .sig-text {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+}
+</style>
 <table width="600" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; max-width: 600px;">
   <tr>
     <td colspan="2" style="padding: 20px 15px 10px 0; vertical-align: top; padding-bottom: 15px;">
@@ -7,12 +15,12 @@ export const emailSignature = `
   </tr>
   <tr>
     <td style="padding-bottom: 5px; vertical-align: top; width: 50%;">
-      <div style="font-size: 22px; color: #333333; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
+      <div class="sig-text" style="font-size: 22px; color: #333333; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">
         Karl McClelland
       </div>
     </td>
     <td style="padding-bottom: 5px; vertical-align: top; width: 50%;">
-      <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
+      <div class="sig-text" style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 1.2;">
         Professional Virtual Tour Creator<br>and Trusted Google Street View Partner
       </div>
     </td>
@@ -23,13 +31,13 @@ export const emailSignature = `
         <tr>
           <td style="vertical-align: middle; width: 50%; padding-right: 10px;">
             <img src="https://karlmcclelland.com/sig/phone_logo.png" width="auto" height="50" style="border: none; vertical-align: middle; margin-right: 8px;">
-            <span style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
+            <span class="sig-text" style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
               <a href="tel:+447960044486" style="color: #333333; text-decoration: none;">+44 7960 044 486</a>
             </span>
           </td>
           <td style="vertical-align: middle; width: 50%; padding-left: 10px;">
             <img src="https://karlmcclelland.com/sig/email_logo.png" width="35" height="35" style="border: none; vertical-align: middle; margin-right: 8px;">
-            <span style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
+            <span class="sig-text" style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
               <a href="mailto:karl@360spaces.co.uk" style="color: #333333; text-decoration: none;">karl@360spaces.co.uk</a>
             </span>
           </td>
@@ -37,7 +45,7 @@ export const emailSignature = `
         <tr>
           <td style="padding-top: 10px; padding-bottom: 15px;">
             <img src="https://karlmcclelland.com/sig/internet_icon.png" width="35" height="35" style="border: none; vertical-align: middle; margin-right: 8px;">
-            <span style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
+            <span class="sig-text" style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
               <a href="https://360spaces.co.uk/" target="_blank" style="color: #333333; text-decoration: none;">360spaces.co.uk</a>
             </span>
           </td>
@@ -48,7 +56,7 @@ export const emailSignature = `
   </tr>
   <tr>
     <td colspan="2" style="padding-top: 15px; padding-bottom: 10px;">
-      <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 16px; margin-bottom: 15px;">
+      <div class="sig-text" style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 16px; margin-bottom: 15px;">
         Google Street View Virtual Tours - Bespoke Virtual Tours - Aerial and Commercial Photography - Short-form and Social Media Production • Social Media Mgt
       </div>
     </td>
@@ -88,9 +96,9 @@ export const emailSignature = `
   </tr>
   <tr>
     <td colspan="2" style="padding-bottom: 10px;">
-      <div style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 15px;">
+      <div class="sig-text" style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 15px;">
         Take advantage of our Google Street View Virtual Tour offer today. Click here for more information on the benefits this can offer to your business.<br><br>
-        <a href="https://karlmcclelland.carrd.co/" style="color: #666666; text-decoration: underline;">https://karlmcclelland.carrd.co/</a>
+        <a href="https://karlmcclelland.carrd.co/" class="sig-text" style="color: #666666; text-decoration: underline;">https://karlmcclelland.carrd.co/</a>
       </div>
     </td>
   </tr>
@@ -99,7 +107,7 @@ export const emailSignature = `
       <a href="https://360spaces.co.uk/" target="_blank" style="text-decoration: none;">
         <img src="https://karlmcclelland.com/sig/voucher_logo.png" width="50" height="50" style="border: none; vertical-align: middle; margin-bottom: 5px;">
       </a>
-      <div style="font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">
+      <div class="sig-text" style="font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">
         Recommend a virtual tour client
       </div>
     </td>
@@ -126,31 +134,21 @@ ${emailSignature}
     id: 'butchers',
     label: 'Butcher Email',
     subject: 'Introducing 360° Virtual Tour Services for {business_name}',
-    body: `<p>Dear {first_name},</p>
-<p>I am Karl, a Belfast-based virtual tour photographer and Google partner. I specialise in creating high-quality custom and Google 360° virtual tours for businesses like {business_name}, helping to attract new customers and showcase your unique offerings.</p>
-<p>Currently, I am working on an immersive virtual tour for Apperley's in Limavady, which you can preview here: <a href="https://360spaces.co.uk/retail/apperleys/">https://360spaces.co.uk/retail/apperleys/</a>. Although still in progress, this custom tour demonstrates the potential for your business to offer an engaging online experience for potential customers, partners, and suppliers, with tailored navigation and functionality.</p>
-<p>In addition to the custom tour, the 360° imagery will also be connected to your Google business presence, enhancing visibility and accessibility. With no hidden fees or additional costs, investing in a virtual tour can help you stand out in a competitive market. As a Google partner, I ensure seamless integration of each tour with your Google business presence, increasing your online presence.</p>
-<p>If you would like to learn more about the benefits a custom Google 360° virtual tour can bring to your business or wish to arrange a meeting or telephone call to discuss your specific requirements, please do not hesitate to contact me directly.</p>
-<p>Thank you for your time, and I look forward to hearing from you soon.</p>
-<p>Sincerely</p>
+    body: `<p>I hope you're keeping well. My name is Karl, and I'm a Google photographer here in Belfast who helps businesses like {business_name get more customers through the door.</p>
+<p>I create virtual tours. Think of it like having me take pictures of every customer-facing part of your business, then stitching them together so people can 'walk through' your business online, just like they're actually there. They can look around, see your display counters, check out your products, and get a real feel for your place before they visit.</p>
+<p>I'm working on one for Apperley's Butchers in Limavady. Have a quick look here to see what I mean:<br>
+https://360spaces.co.uk/retail/apperleys/</p>
+<p>Click and drag around with your finger or mouse and you'll see exactly what your potential customers would see when they "walk" through online.</p>
+<p>Here's why this helps your business: when people search for local shops, delis, or specialty food businesses on Google, they don't just see your address and phone number anymore - they can click, step inside and see your business. It's like having your front door open 24/7 for people to peek in. More people will choose you over competitors because they can see the quality of your setup and feel confident about visiting.</p>
+<p>The best part? Once it's set up, it works automatically with your Google listing (the bit that shows up when people search for you), so you don't need to worry about the technical side.</p>
+<p>I've put together some more information about the benefits at https://karlmcclelland.carrd.co/, if you'd like to see how it could work for you. There's also a special 25% discount I'm offering at the moment.</p>
+<p>Would you be interested in a quick chat over the phone/email? I can explain more about how it works and what it would mean for your business. No pressure - just a friendly conversation about whether this might be right for you.</p>
+<p>Thanks for taking the time to read this, and I hope to hear from you soon</p>
+<p>Best regards<br>Karl</p>
 ${emailSignature}
 `
   },
   {
-    id: 'butchers',
-    label: 'Butcher Email',
-    subject: 'Introducing 360° Virtual Tour Services for {business_name}',
-    body: `<p>Dear {first_name},</p>
-<p>I am Karl, a Belfast-based virtual tour photographer and Google partner. I specialise in creating high-quality custom and Google 360° virtual tours for businesses like {business_name}, helping to attract new customers and showcase your unique offerings.</p>
-<p>Currently, I am working on an immersive virtual tour for Apperley's in Limavady, which you can preview here: <a href="https://360spaces.co.uk/retail/apperleys/">https://360spaces.co.uk/retail/apperleys/</a>. Although still in progress, this custom tour demonstrates the potential for your business to offer an engaging online experience for potential customers, partners, and suppliers, with tailored navigation and functionality.</p>
-<p>In addition to the custom tour, the 360° imagery will also be connected to your Google business presence, enhancing visibility and accessibility. With no hidden fees or additional costs, investing in a virtual tour can help you stand out in a competitive market. As a Google partner, I ensure seamless integration of each tour with your Google business presence, increasing your online presence.</p>
-<p>If you would like to learn more about the benefits a custom Google 360° virtual tour can bring to your business or wish to arrange a meeting or telephone call to discuss your specific requirements, please do not hesitate to contact me directly.</p>
-<p>Thank you for your time, and I look forward to hearing from you soon.</p>
-<p>Sincerely</p>
-${emailSignature}
-`
-  },
-{
     id: 'restaurants',
     label: 'Restaurants, Cafes & Bars',
     subject: 'Introducing 360° Virtual Tour Services for {business_name}',
