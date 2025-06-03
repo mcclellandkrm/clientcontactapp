@@ -72,10 +72,6 @@ const ClientForm: React.FC<ClientFormProps> = ({
     outline: 'none',
     fontWeight: 400,
     letterSpacing: 0.5,
-    '::placeholder': {
-      color: '#e0e0e0',
-      opacity: 1,
-    },
   };
 
   const buttonStyle: React.CSSProperties = {
