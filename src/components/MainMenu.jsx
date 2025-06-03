@@ -1,88 +1,69 @@
-import React from "react";
+import React from 'react';
 
-const MainMenu = ({ onAddNew, onSendEmail, onSearch }) => (
-  <div
-    style={{
-      height: "100vh",
-      width: "100vw",
-      background: "linear-gradient(135deg, #555 0%, #b6e100 100%)",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-      position: "relative",
-      overflow: "hidden",
-    }}
-  >
-    {/* Large Rotated Logo */}
+type MainMenuProps = {
+  onAddNew: () => void;
+  onSendEmail: () => void;
+  onSearch: () => void;
+};
+
+const MainMenu: React.FC<MainMenuProps> = ({ onAddNew, onSendEmail, onSearch }) => {
+  return (
     <div
       style={{
-        position: "absolute",
-        left: "-50px",
-        top: "0",
-        fontSize: "8rem",
-        fontWeight: "bold",
-        color: "#fff",
-        transform: "rotate(-30deg)",
-        opacity: 0.15,
-        zIndex: 0,
-        pointerEvents: "none",
-        userSelect: "none",
+        minHeight: '100vh',
+        width: '100vw',
+        background: `url('https://karlmcclelland.com/contactapp/app_screen_1.png') center center / cover no-repeat`,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start',
+        padding: '0 0 8vh 8vw',
+        boxSizing: 'border-box',
       }}
     >
-      360Spaces
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1.2em',
+        marginBottom: '2em',
+        width: 260,
+      }}>
+        <button
+          style={menuButtonStyle}
+          onClick={onAddNew}
+        >
+          Add New Client
+        </button>
+        <button
+          style={menuButtonStyle}
+          onClick={onSendEmail}
+        >
+          Send Email
+        </button>
+        <button
+          style={menuButtonStyle}
+          onClick={onSearch}
+        >
+          Search
+        </button>
+      </div>
     </div>
+  );
+};
 
-    {/* Menu Buttons */}
-    <div style={{ zIndex: 1, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-      <button
-        style={menuBtnStyle}
-        onClick={onAddNew}
-      >
-        add new
-      </button>
-      <button
-        style={menuBtnStyle}
-        onClick={onSendEmail}
-      >
-        send email
-      </button>
-      <button
-        style={menuBtnStyle}
-        onClick={onSearch}
-      >
-        search for
-      </button>
-    </div>
-
-    {/* Footer */}
-    <div
-      style={{
-        position: "absolute",
-        bottom: 20,
-        right: 20,
-        color: "#b6e100",
-        fontSize: "0.9rem",
-        opacity: 0.7,
-        zIndex: 1,
-      }}
-    >
-      2025 © 360spaces.co.uk
-    </div>
-  </div>
-);
-
-const menuBtnStyle = {
-  background: "#b6e100",
-  color: "#222",
-  border: "none",
-  borderRadius: "8px",
-  padding: "1rem 2.5rem",
-  fontSize: "1.2rem",
-  fontWeight: "bold",
-  cursor: "pointer",
-  boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-  transition: "background 0.2s",
+const menuButtonStyle: React.CSSProperties = {
+  width: '100%',
+  padding: '1em',
+  borderRadius: 8,
+  border: 'none',
+  background: 'rgba(255,255,255,0.85)',
+  color: '#333',
+  fontWeight: 600,
+  fontSize: 18,
+  cursor: 'pointer',
+  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+  transition: 'background 0.2s',
+  textAlign: 'left',
 };
 
 export default MainMenu;
