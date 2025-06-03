@@ -30,6 +30,8 @@ select option {
   background: #d4a4a4 !important;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+button[type="submit"]:active,
+button[type="submit"]:focus {
   background: rgba(255,255,255,0.28);
 }
