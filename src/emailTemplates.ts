@@ -132,19 +132,19 @@ ${emailSignature}
   },
   {
     id: 'butchers',
-    label: 'Butcher Email',
+    label: 'Butchers, Delis & Food',
     subject: 'A 360° Virtual Tour for {business_name}',
     body: `<p>Hello {first_name},</p>
-<p>I hope you're keeping well. My name is Karl, and I'm a Google photographer here in Belfast who helps businesses like {business_name get more customers through the door.</p>
-<p>I create virtual tours. Think of it like having me take pictures of every customer-facing part of your business, then stitching them together so people can 'walk through' your business online, just like they're actually there. They can look around, see your display counters, check out your products, and get a real feel for your place before they visit.</p>
-<p>I'm working on one for Apperley's Butchers in Limavady. Have a quick look here to see what I mean:<br>
+<p>I hope you're keeping well. My name is Karl, and I'm a Google photographer based in Belfast. I help businesses like {business_name} attract more customers by creating virtual tours.</p>
+<p>A virtual tour is like a digital walkthrough of your business, allowing potential customers to explore your space online as if they were there in person. They can look around, view your display counters, browse your products, and get a genuine feel for your business before they visit.</p>
+<p>I'm currently working on a virtual tour for Apperley's Butchers, Deli and Coffee in Limavady. Take a quick look here to see what I mean:<br>
 https://360spaces.co.uk/retail/apperleys/</p>
-<p>Click and drag around with your finger or mouse and you'll see exactly what your potential customers would see when they "walk" through online.</p>
-<p>Here's why this helps your business: when people search for local shops, delis, or specialty food businesses on Google, they don't just see your address and phone number anymore - they can click, step inside and see your business. It's like having your front door open 24/7 for people to peek in. More people will choose you over competitors because they can see the quality of your setup and feel confident about visiting.</p>
-<p>The best part? Once it's set up, it works automatically with your Google listing (the bit that shows up when people search for you), so you don't need to worry about the technical side.</p>
-<p>I've put together some more information about the benefits at https://karlmcclelland.carrd.co/, if you'd like to see how it could work for you. There's also a special 25% discount I'm offering at the moment.</p>
-<p>Would you be interested in a quick chat over the phone/email? I can explain more about how it works and what it would mean for your business. No pressure - just a friendly conversation about whether this might be right for you.</p>
-<p>Thanks for taking the time to read this, and I hope to hear from you soon</p>
+<p>Click and drag with your finger or mouse to explore the space, just as your potential customers would when they "walk" through your business online.</p>
+<p>Here's how this helps: When a potential customer searches for local shops, delis, or specialty food businesses on Google, they don't just see your address and phone number. They can step inside and explore your business virtually. It's like having your doors open 24/7 for people to peek in. This encourages more people to choose your business over competitors because they can see the quality of your setup and feel confident about visiting.</p>
+<p>The best part? Once the virtual tour is set up, it automatically integrates with your Google listing (the information that shows up when people search for you), so you don't need to worry about technical details. You can also have this on your website and easily share online via WhatsaApp, text or email.</p>
+<p>If you'd like to learn more about the benefits of a virtual tour, visit https://karlmcclelland.carrd.co/. I'm currently offering a special 25% discount for new clients.</p>
+<p>Would you be interested in a brief chat over the phone or email? I can provide more information on how it works and what it could do for {business_name}. Just to determine if this is a good fit for you.</p>
+<p>Thanks for taking the time to read this and I hope to hear from you soon</p>
 <p>Best regards<br>Karl</p>
 ${emailSignature}
 `
