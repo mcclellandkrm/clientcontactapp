@@ -32,13 +32,13 @@ export const emailSignature = `
           <td style="vertical-align: middle; width: 50%; padding-right: 10px;">
             <img src="https://karlmcclelland.com/sig/phone_logo.png" width="auto" height="50" style="border: none; vertical-align: middle; margin-right: 8px;">
             <span class="sig-text" style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
-              <a href="tel:+447960044486" style="color: #333333; text-decoration: none;">+44 7960 044 486</a>
+              <a href="tel:+447960044486" style="color: #333333; text-decoration: none;"> +44 7960 044 486</a>
             </span>
           </td>
           <td style="vertical-align: middle; width: 50%; padding-left: 10px;">
             <img src="https://karlmcclelland.com/sig/email_logo.png" width="35" height="35" style="border: none; vertical-align: middle; margin-right: 8px;">
             <span class="sig-text" style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
-              <a href="mailto:karl@360spaces.co.uk" style="color: #333333; text-decoration: none;">karl@360spaces.co.uk</a>
+              <a href="mailto:karl@360spaces.co.uk" style="color: #333333; text-decoration: none;"> karl@360spaces.co.uk</a>
             </span>
           </td>
         </tr>
@@ -46,7 +46,7 @@ export const emailSignature = `
           <td style="padding-top: 10px; padding-bottom: 15px;">
             <img src="https://karlmcclelland.com/sig/internet_icon.png" width="35" height="35" style="border: none; vertical-align: middle; margin-right: 8px;">
             <span class="sig-text" style="font-size: 16px; color: #333333; font-family: Arial, Helvetica, sans-serif;">
-              <a href="https://360spaces.co.uk/" target="_blank" style="color: #333333; text-decoration: none;">360spaces.co.uk</a>
+              <a href="https://360spaces.co.uk/" target="_blank" style="color: #333333; text-decoration: none;"> 360spaces.co.uk</a>
             </span>
           </td>
           <td></td>

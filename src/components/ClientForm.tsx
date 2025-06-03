@@ -50,7 +50,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    background: `url('https://karlmcclelland.com/contactapp/client_form_screen.png') center center / cover no-repeat`,
+    background: `url('https://karlmcclelland.com/contactapp/client_form_screen_2.png') center center / cover no-repeat`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   padding: '0 0 0 24px', // <-- add left padding here (24px, adjust as needed)
