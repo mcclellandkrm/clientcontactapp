@@ -212,10 +212,3 @@ const ClientForm: React.FC<ClientFormProps> = ({
 };
 
 export default ClientForm;
-<ClientForm
-  onChange={handleClientDetailsChange}
-  onNext={...}
-  emailTemplates={emailTemplates}
-  selectedTemplateId={selectedTemplateId}
-  onTemplateChange={handleEmailTemplateChange}
-/>
