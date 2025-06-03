@@ -114,8 +114,6 @@ const App: React.FC = () => {
           emailTemplates={emailTemplates}
           selectedTemplateId={selectedTemplateId}
           onTemplateChange={handleEmailTemplateChange}
-          sending={sending}
-          error={error}
         />
       )}
 
