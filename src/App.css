@@ -30,9 +30,20 @@ select option {
   background: #d4a4a4 !important;
 }
 
+button[type="submit"] {
+  background: rgba(255,255,255,0.18);
+  color: #222;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
 button[type="submit"]:hover,
 button[type="submit"]:active,
 button[type="submit"]:focus {
   background: rgba(199, 35, 35, 0.28);
 }
-
