@@ -31,6 +31,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
   onTemplateChange
 }) => {
   const [form, setForm] = useState(initialState);
+  const [lastAction, setLastAction] = useState<'send' | 'add' | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

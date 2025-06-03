@@ -13,6 +13,7 @@ const App: React.FC = () => {
   const [screen, setScreen] = useState<Screen>('menu');
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [lastAction, setLastAction] = useState<'send' | 'add' | null>(null); // <-- add this
 
   const selectedTemplate = emailTemplates.find(t => t.id === selectedTemplateId);
 
@@ -67,6 +68,7 @@ const App: React.FC = () => {
         throw new Error(errData.error || 'Failed to send email');
       }
 
+      setLastAction('send'); // <-- set last action
       setScreen('sent');
     } catch (err: any) {
       setError(err.message || JSON.stringify(err) || 'Failed to save record or send email.');
@@ -99,6 +101,7 @@ const App: React.FC = () => {
           onNext={() => {
             if (screen === 'send') {
               handleSend();
+              // setLastAction('send'); // handled in handleSend
             } else {
               // Just save to Supabase, no email
               if (clientDetails) {
@@ -107,7 +110,10 @@ const App: React.FC = () => {
                     ...clientDetails,
                     return_date: clientDetails.return_date || null,
                   }
-                ]).then(() => setScreen('sent'));
+                ]).then(() => {
+                  setLastAction('add'); // <-- set last action
+                  setScreen('sent');
+                });
               }
             }
           }}
@@ -137,7 +143,7 @@ const App: React.FC = () => {
         }}>
           <h2>Success!</h2>
           <p>
-            {screen === 'send'
+            {lastAction === 'send'
               ? `That is now winging its way to ${clientDetails?.business_email}.`
               : 'Record saved for later.'}
           </p>
