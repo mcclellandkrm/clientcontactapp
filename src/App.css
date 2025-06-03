@@ -9,12 +9,12 @@ input:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: #73c60e !important; /* Try a dark color for testing */
+  color: #292929 !important; /* Try a dark color for testing */
   opacity: 1 !important;
 }
 input[type="date"] {
-  color: #870669 !important;
-  background: rgba(255,255,255,0.18);
+  color: #ebd630 !important;
+  background: rgba(108, 12, 87, 0.18);
   filter: brightness(0.2) invert(0);
 }
 input[type="date"]::placeholder {
@@ -27,7 +27,7 @@ select {
 }
 select option {
   color: #222 !important;
-  background: #fff !important;
+  background: #d4a4a4 !important;
 }
 
 button[type="submit"]:hover {
