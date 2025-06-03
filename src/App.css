@@ -9,16 +9,16 @@ input:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: #292929 !important; /* Try a dark color for testing */
+  color: #780505 !important; /* Try a dark color for testing */
   opacity: 1 !important;
 }
 input[type="date"] {
-  color: #ebd630 !important;
-  background: rgba(108, 12, 87, 0.18);
+  color: #9b914a !important;
+  background: rgba(186, 115, 170, 0.883);
   filter: brightness(0.2) invert(0);
 }
 input[type="date"]::placeholder {
-  color: #794505 !important;
+  color: #b49774 !important;
 }
 
 select {
@@ -26,16 +26,13 @@ select {
   color: #6f1717 !important;
 }
 select option {
-  color: #222 !important;
+  color: #c58888 !important;
   background: #d4a4a4 !important;
 }
 
 button[type="submit"]:hover,
 button[type="submit"]:active,
 button[type="submit"]:focus {
-  background: rgba(255,255,255,0.28);
+  background: rgba(199, 35, 35, 0.28);
 }
 
-body {
-  border: 5px solid red !important;
-}

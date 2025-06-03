@@ -53,7 +53,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
     background: `url('https://karlmcclelland.com/contactapp/client_form_screen.png') center center / cover no-repeat`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    padding: '0',
+  padding: '0 0 0 24px', // <-- add left padding here (24px, adjust as needed)
   };
 
   const inputStyle: React.CSSProperties = {
