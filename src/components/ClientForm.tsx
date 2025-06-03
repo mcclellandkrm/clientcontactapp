@@ -50,10 +50,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    background: 'radial-gradient(circle at 75% 70%, #ffd966 0%, #555 80%)',
-    // Optionally add your background image here as well:
-    // backgroundImage: 'url("https://karlmcclelland.com/sig/appbackground.jpg")',
-    // backgroundBlendMode: 'overlay',
+    background: `url('https://karlmcclelland.com/contactapp/client_form_screen.png') center center / cover no-repeat`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     padding: '0',
