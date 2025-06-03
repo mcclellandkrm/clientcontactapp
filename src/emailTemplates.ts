@@ -133,8 +133,9 @@ ${emailSignature}
   {
     id: 'butchers',
     label: 'Butcher Email',
-    subject: 'Introducing 360° Virtual Tour Services for {business_name}',
-    body: `<p>I hope you're keeping well. My name is Karl, and I'm a Google photographer here in Belfast who helps businesses like {business_name get more customers through the door.</p>
+    subject: 'A 360° Virtual Tour for {business_name}',
+    body: `<p>Hello {first_name},</p>
+<p>I hope you're keeping well. My name is Karl, and I'm a Google photographer here in Belfast who helps businesses like {business_name get more customers through the door.</p>
 <p>I create virtual tours. Think of it like having me take pictures of every customer-facing part of your business, then stitching them together so people can 'walk through' your business online, just like they're actually there. They can look around, see your display counters, check out your products, and get a real feel for your place before they visit.</p>
 <p>I'm working on one for Apperley's Butchers in Limavady. Have a quick look here to see what I mean:<br>
 https://360spaces.co.uk/retail/apperleys/</p>
