@@ -1,8 +1,33 @@
 /* App.css */
 input::placeholder,
-textarea::placeholder {
-  color: #2f2f2f;
-  opacity: 1;
+textarea::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #2c0b55 !important; /* Try a dark color for testing */
+  opacity: 1 !important;
+}
+input[type="date"] {
+  color: #870669 !important;
+  background: rgba(255,255,255,0.18);
+  filter: brightness(0.2) invert(0);
+}
+input[type="date"]::placeholder {
+  color: #794505 !important;
+}
+
+select {
+  background: rgba(80,80,80,0.85) !important;
+  color: #fff !important;
+}
+select option {
+  color: #222 !important;
+  background: #fff !important;
 }
 
 button[type="submit"]:hover {
