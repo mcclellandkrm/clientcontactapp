@@ -98,15 +98,16 @@ const ClientForm: React.FC<ClientFormProps> = ({
       }}
     >
       <div style={{
-        width: 350,
-        background: 'rgba(80,80,80,0.45)',
-        borderRadius: 18,
-        padding: '2.5em 1.5em 1.5em 1.5em',
-        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}>
+  width: 350,
+  background: 'rgba(80,80,80,0.45)',
+  borderRadius: 18,
+  padding: '2.5em 1.5em 1.5em 2.5em', // <-- increase left padding here
+  boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  marginLeft: 24, // <-- add this for extra left space
+}}>
         <img src={logo} alt="360spaces Logo" style={{ height: 40, marginBottom: 24 }} />
         {/* <h2 style={{ margin: '0 0 1em 0', fontWeight: 600, color: '#fff' }}>Enter Client</h2> */}
         <input
