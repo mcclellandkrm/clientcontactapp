@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import ClientForm from './components/ClientForm';
+import MainMenu from './components/MainMenu';
 import { emailTemplates, fillTemplate } from './emailTemplates';
 import { ClientDetails } from './types';
 import { supabase } from './supabaseClient';
 
+type Screen = 'menu' | 'add' | 'send' | 'search' | 'sent';
+
 const App: React.FC = () => {
   const [clientDetails, setClientDetails] = useState<ClientDetails | null>(null);
-  const [selectedTemplateId, setSelectedTemplateId] = useState<string>(''); // empty string
-  const [step, setStep] = useState<'entry' | 'preview' | 'sent'>('entry');
+  const [selectedTemplateId, setSelectedTemplateId] = useState<string>('');
+  const [screen, setScreen] = useState<Screen>('menu');
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -29,18 +32,17 @@ const App: React.FC = () => {
     setSending(true);
     setError(null);
 
-    // Split TO and CC fields by semicolon
     const to = clientDetails.business_email
       .split(';')
       .map((email: string) => email.trim())
       .filter((email: string) => email.length > 0);
 
     const copy_to = clientDetails.copy_to
-  ? clientDetails.copy_to.split(';').map((email: string) => email.trim()).filter((email: string) => email.length > 0)
-  : undefined;
+      ? clientDetails.copy_to.split(';').map((email: string) => email.trim()).filter((email: string) => email.length > 0)
+      : undefined;
 
     try {
-      // Save record in Supabase (as before)
+      // Save record in Supabase
       const { error } = await supabase.from('clientcontact').insert([
         {
           ...clientDetails,
@@ -55,7 +57,7 @@ const App: React.FC = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           to,
-          cc: copy_to, // <-- use copy_to here
+          cc: copy_to,
           subject,
           body,
         }),
@@ -65,7 +67,7 @@ const App: React.FC = () => {
         throw new Error(errData.error || 'Failed to send email');
       }
 
-      setStep('sent');
+      setScreen('sent');
     } catch (err: any) {
       setError(err.message || JSON.stringify(err) || 'Failed to save record or send email.');
     } finally {
@@ -73,70 +75,58 @@ const App: React.FC = () => {
     }
   };
 
-  // Utility to copy text to clipboard
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-  };
-
   return (
     <div>
-      {step === 'entry' && (
+      {screen === 'menu' && (
+        <MainMenu
+          onAddNew={() => {
+            setClientDetails(null);
+            setSelectedTemplateId('');
+            setScreen('add');
+          }}
+          onSendEmail={() => {
+            setClientDetails(null);
+            setSelectedTemplateId('');
+            setScreen('send');
+          }}
+          onSearch={() => setScreen('search')}
+        />
+      )}
+
+      {(screen === 'add' || screen === 'send') && (
         <ClientForm
           onChange={handleClientDetailsChange}
-          onNext={() => setStep('preview')}
+          onNext={() => {
+            if (screen === 'send') {
+              handleSend();
+            } else {
+              // Just save to Supabase, no email
+              if (clientDetails) {
+                supabase.from('clientcontact').insert([
+                  {
+                    ...clientDetails,
+                    return_date: clientDetails.return_date || null,
+                  }
+                ]).then(() => setScreen('sent'));
+              }
+            }
+          }}
           emailTemplates={emailTemplates}
           selectedTemplateId={selectedTemplateId}
           onTemplateChange={handleEmailTemplateChange}
+          sending={sending}
+          error={error}
         />
       )}
-      {step === 'preview' && clientDetails && selectedTemplate && (
-        <div style={{
-          background: '#c3d82e',
-          borderRadius: '16px',
-          padding: '2em',
-          width: 350,
-          margin: '2em auto',
-          fontFamily: 'sans-serif',
-          boxSizing: 'border-box'
-        }}>
-          <h2>Email Preview</h2>
-          <strong>To:</strong> {clientDetails.business_email}<br />
-          <strong>Subject:</strong>
-          <span style={{ marginLeft: 8 }}>{subject}</span>
-          <button
-            style={{ marginLeft: 8, fontSize: 12 }}
-            onClick={() => copyToClipboard(subject)}
-            type="button"
-          >Copy</button>
-          <br />
-          <strong>Body:</strong>
-          <button
-            style={{ marginLeft: 8, fontSize: 12 }}
-            onClick={() => copyToClipboard(body)}
-            type="button"
-          >Copy</button>
-          <pre style={{ background: '#fff', padding: '1em', borderRadius: 4 }}>{body}</pre>
-          {error && <div style={{ color: 'red', marginBottom: 8 }}>{error}</div>}
-          <button
-            onClick={handleSend}
-            disabled={sending}
-            style={{
-              width: '100%',
-              padding: '0.5em',
-              background: '#fff',
-              color: '#333',
-              border: 'none',
-              borderRadius: 3,
-              fontWeight: 600,
-              fontSize: 16,
-              cursor: 'pointer'
-            }}
-          >
-            {sending ? 'Saving...' : 'Save Record'}
-          </button>
+
+      {screen === 'search' && (
+        <div style={{ padding: 40, textAlign: 'center' }}>
+          <h2>Search (to be implemented)</h2>
+          <button onClick={() => setScreen('menu')}>Back to Menu</button>
         </div>
       )}
-      {step === 'sent' && (
+
+      {screen === 'sent' && (
         <div style={{
           background: '#c3d82e',
           borderRadius: '16px',
@@ -147,14 +137,14 @@ const App: React.FC = () => {
           boxSizing: 'border-box',
           textAlign: 'center'
         }}>
-          <h2>Yeoow Success!</h2>
-          <p>That is now winging it's way to {clientDetails?.business_email}.</p>
+          <h2>Success!</h2>
+          <p>
+            {screen === 'send'
+              ? `That is now winging its way to ${clientDetails?.business_email}.`
+              : 'Record saved for later.'}
+          </p>
           <button
-            onClick={() => {
-              setClientDetails(null);
-              setSelectedTemplateId('welcome');
-              setStep('entry');
-            }}
+            onClick={() => setScreen('menu')}
             style={{
               marginTop: 12,
               width: '100%',
@@ -168,7 +158,7 @@ const App: React.FC = () => {
               cursor: 'pointer'
             }}
           >
-            Another One?
+            Back to Menu
           </button>
         </div>
       )}
