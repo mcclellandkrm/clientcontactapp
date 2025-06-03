@@ -9,7 +9,7 @@ input:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: #2c0b55 !important; /* Try a dark color for testing */
+  color: #73c60e !important; /* Try a dark color for testing */
   opacity: 1 !important;
 }
 input[type="date"] {
@@ -23,7 +23,7 @@ input[type="date"]::placeholder {
 
 select {
   background: rgba(80,80,80,0.85) !important;
-  color: #fff !important;
+  color: #6f1717 !important;
 }
 select option {
   color: #222 !important;
