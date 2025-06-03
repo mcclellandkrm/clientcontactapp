@@ -29,41 +29,26 @@ const MainMenu: React.FC<MainMenuProps> = ({ onAddNew, onSendEmail, onSearch }) 
         width: 260,
       }}>
         <button
-          style={menuButtonStyle}
+          className="menu-btn"
           onClick={onAddNew}
         >
           Add New Contact
         </button>
         <button
-          style={menuButtonStyle}
+          className="menu-btn"
           onClick={onSendEmail}
         >
           Send Templated Email
         </button>
         <button
-          style={menuButtonStyle}
+          className="menu-btn"
           onClick={onSearch}
         >
-          Search fo Contact
+          Search for Contact
         </button>
       </div>
     </div>
   );
-};
-
-const menuButtonStyle: React.CSSProperties = {
-  width: '100%',
-  padding: '1em',
-  borderRadius: 10,
-  border: 'none',
-  background: 'rgba(255,255,255,0.55)',
-  color: '#333',
-  fontWeight: 400,
-  fontSize: 16,
-  cursor: 'pointer',
-  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
-  transition: 'background 0.2s',
-  textAlign: 'left',
 };
 
 export default MainMenu;

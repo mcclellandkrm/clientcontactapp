@@ -47,3 +47,22 @@ button[type="submit"]:active,
 button[type="submit"]:focus {
   background: rgba(199, 35, 35, 0.28);
 }
+.menu-btn {
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.55);
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+  text-align: left;
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+  background: rgba(255,255,255,0.85);
+}
