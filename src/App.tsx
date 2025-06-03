@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css';
 import ClientForm from './components/ClientForm';
 import MainMenu from './components/MainMenu';
 import { emailTemplates, fillTemplate } from './emailTemplates';
