@@ -64,7 +64,6 @@ const ClientForm: React.FC<ClientFormProps> = ({
     border: 'none',
     fontSize: 18,
     background: 'rgba(255,255,255,0.18)',
-    // color: '#fff',
     boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
     outline: 'none',
     fontWeight: 400,
