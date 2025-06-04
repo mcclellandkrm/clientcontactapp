@@ -97,7 +97,11 @@ export const emailSignature = `
   <tr>
     <td colspan="2" style="padding-bottom: 10px;">
       <div class="sig-text" style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 15px;">
+<<<<<<< HEAD
         Take advantage of our limited-time Google Street View Virtual Tour offer. Click here for more information on the benefits this can offer to your business.<br><br>
+=======
+        Take  fulladvantage of our Google Street View Virtual Tour offer today. Click here for more information on the benefits this can offer to your business.<br><br>
+>>>>>>> fb277c9b123b821a56902dc43e5d804250703918
         <a href="https://karlmcclelland.carrd.co/" class="sig-text" style="color: #666666; text-decoration: underline;">https://karlmcclelland.carrd.co/</a>
       </div>
     </td>
