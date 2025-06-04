@@ -175,7 +175,7 @@ ${emailSignature}
 
 <p>Restaurants, cafes, and bars I've worked with have used their tours to showcase atmosphere, increase bookings, and bring in more footfall, especially from people searching nearby. It's a proven way to make a great first impression.</p>
 
-<p>I'll be in the {business_location} area on {return_date} and would be happy to call in for a quick chat/site visit and maybe take some test photographs (at no cost). The one-time fee includes photography, tour creation, and integration with your Google Business profile. There are no ongoing costs unless you would prefer a more custom, bespoke solution which may suit better.</p>
+<p>{visit_text}</p>
 
 <p>If you'd like to learn more about the benefits of a virtual tour, visit <a href="https://karlmcclelland.carrd.co/">https://karlmcclelland.carrd.co/</a>. I'm currently offering a special 25% discount on Google virtual tours for new clients.</p>
 
@@ -303,11 +303,13 @@ ${emailSignature}
 ];
 
 import { formatDate } from './utils/dateUtils';
+import { getVisitText } from './utils/emailUtils'; // <-- add this import
 
 export const fillTemplate = (template: string, details: any) => {
   return template
     .replace(/{first_name}/g, details.first_name || '')
     .replace(/{business_name}/g, details.business_name || '')
     .replace(/{business_location}/g, details.business_location || '')
-    .replace(/{return_date}/g, formatDate(details.return_date || ''));
+    .replace(/{return_date}/g, formatDate(details.return_date || ''))
+    .replace(/{visit_text}/g, getVisitText(details.business_location, formatDate(details.return_date || '')));
 };
