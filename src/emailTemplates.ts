@@ -170,7 +170,7 @@ ${emailSignature}
 
 <p>Click and drag with your finger or mouse to explore the spaces, just as your potential customers would when they "walk" through your restaurant online.</p>
 
-<p>Here's how this helps: When potential customers search for restaurants in {business_location} on Google, they get so much more than just your address and phone number. They can virtually walk through your restaurant, see your dining spaces, and get excited about the experience you offer. It's like giving them a sneak preview that's available 24/7. When people can see and feel what your restaurant is like beforehand, they're much more likely to choose you over competitors - because you've already made that crucial first impression.</p>
+<p>How this can help: When potential customers search for restaurants in {business_location} on Google, they get so much more than just your address and phone number. They can virtually walk through your restaurant, see your dining spaces, and get excited about the experience you offer. It's like giving them a sneak preview that's available 24/7. When people can see and feel what your restaurant is like beforehand, they're much more likely to choose you over competitors - because you've already made that crucial first impression.</p>
 
 <p>The best part? It's completely hands-off once set up - the virtual tour automatically enhances your Google Business listing so every search shows your restaurant in its best light. Beyond that, you've got a powerful marketing tool: embed it on your website, share it when potential customers call with questions about your venue, or post it on social media to showcase your atmosphere and draw people in.</p>
 
