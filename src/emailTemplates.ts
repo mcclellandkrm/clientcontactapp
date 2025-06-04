@@ -162,10 +162,10 @@ ${emailSignature}
 <p>I'm currently working with a number of restaurants and hospitality businesses across Northern Ireland. Take a quick look at these two examples to see what I mean:</p>
 
 <p><strong>Google Street View Tour: Guru Indian Cuisine</strong><br>
-[https://maps.app.goo.gl/ijMe2n4iB1fC9jWF7]</p>
+https://maps.app.goo.gl/ijMe2n4iB1fC9jWF7</p>
 
 <p><strong>Bespoke Virtual Tour: Bolt Deli:</strong><br>
-[https://karlmcclelland.com/hospitality/bolt/]</p>
+https://karlmcclelland.com/hospitality/bolt/</p>
 
 <p>Click and drag with your finger or mouse to explore the spaces, just as your potential customers would when they "walk" through your restaurant online.</p>
 
