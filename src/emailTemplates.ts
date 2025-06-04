@@ -97,11 +97,7 @@ export const emailSignature = `
   <tr>
     <td colspan="2" style="padding-bottom: 10px;">
       <div class="sig-text" style="font-size: 16px; color: #666666; font-family: Arial, Helvetica, sans-serif; line-height: 20px; margin-bottom: 15px;">
-<<<<<<< HEAD
         Take advantage of our limited-time Google Street View Virtual Tour offer. Click here for more information on the benefits this can offer to your business.<br><br>
-=======
-        Take  fulladvantage of our Google Street View Virtual Tour offer today. Click here for more information on the benefits this can offer to your business.<br><br>
->>>>>>> fb277c9b123b821a56902dc43e5d804250703918
         <a href="https://karlmcclelland.carrd.co/" class="sig-text" style="color: #666666; text-decoration: underline;">https://karlmcclelland.carrd.co/</a>
       </div>
     </td>
@@ -112,7 +108,7 @@ export const emailSignature = `
         <img src="https://karlmcclelland.com/sig/voucher_logo.png" width="50" height="50" style="border: none; vertical-align: middle; margin-bottom: 5px;">
       </a>
       <div class="sig-text" style="font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">
-        Recommend a virtual tour client
+        Recommend a business that becomes a virtual tour client and receive £50 in M&S vouchers as a thank you!
       </div>
     </td>
   </tr>
@@ -156,26 +152,26 @@ ${emailSignature}
   {
     id: 'restaurants',
     label: 'Restaurants, Cafes & Bars',
-    subject: 'Introducing 360° Virtual Tour Services for {business_name}',
+    subject: 'A High-Quality 360° Virtual Tour for {business_name}',
     body: `<p>Hello {first_name},</p>
 
-<p>I hope you're keeping well. My name is Karl, and I'm a Google photographer based in Belfast. I help restaurants like {business_name} attract more customers by creating virtual tours.</p>
+<p>I hope you are well. My name is Karl, and I'm a Google photographer based in Belfast. I help restaurants like {business_name} attract more customers by creating virtual tours.</p>
 
-<p>A virtual tour is like a digital walkthrough of your restaurant, allowing potential diners to explore your space online as if they were there in person. They can look around, see your dining areas, view your bar setup, check out your atmosphere, and get a genuine feel for your restaurant before they consider making a reservation or visiting.</p>
+<p>A virtual tour is a high-quality digital walkthrough of your restaurant, allowing potential diners to explore your space online as if they were there in person. They can look around, see your dining areas, view your bar setup, check out your atmosphere and get a genuine feel for your restaurant before they consider making a reservation or visiting.</p>
 
-<p>I'm currently working with restaurants and hospitality businesses across Northern Ireland. Take a quick look at these examples to see what I mean:</p>
+<p>I'm currently working with a number of restaurants and hospitality businesses across Northern Ireland. Take a quick look at these two examples to see what I mean:</p>
 
-<p><strong>Google Street View Tour:</strong><br>
-[INSERT GOOGLE STREET VIEW TOUR LINK HERE]</p>
+<p><strong>Google Street View Tour: Guru Indian Cuisine</strong><br>
+[https://maps.app.goo.gl/ijMe2n4iB1fC9jWF7]</p>
 
-<p><strong>Custom Virtual Tour:</strong><br>
-[INSERT CUSTOM VIRTUAL TOUR LINK HERE]</p>
+<p><strong>Bespoke Virtual Tour: Bolt Deli:</strong><br>
+[https://karlmcclelland.com/hospitality/bolt/]</p>
 
 <p>Click and drag with your finger or mouse to explore the spaces, just as your potential customers would when they "walk" through your restaurant online.</p>
 
-<p>Here's how this helps: When potential customers search for restaurants in {business_location} on Google, they don't just see your address and phone number. They can step inside and explore your restaurant virtually. It's like having your doors open 24/7 for people to peek in and find out much more. This encourages more people to choose your restaurant over competitors because they can see the quality of your setup, your ambiance, and feel confident about making a reservation.</p>
+<p>Here's how this helps: When potential customers search for restaurants in {business_location} on Google, they get so much more than just your address and phone number. They can virtually walk through your restaurant, see your dining spaces, and get excited about the experience you offer. It's like giving them a sneak preview that's available 24/7. When people can see and feel what your restaurant is like beforehand, they're much more likely to choose you over competitors - because you've already made that crucial first impression.</p>
 
-<p>The best part? Once the virtual tour is set up, it is integrated with your Google Business presence (the information that shows up when people search for you), so you don't need to worry about any technical details. You can also feature this on your website and easily share it via WhatsApp, social media, or email to show your restaurant to someone who calls with any questions.</p>
+<p>The best part? It's completely hands-off once set up - the virtual tour automatically enhances your Google Business listing so every search shows your restaurant in its best light. Beyond that, you've got a powerful marketing tool: embed it on your website, share it when potential customers call with questions about your venue, or post it on social media to showcase your atmosphere and draw people in.</p>
 
 <p>Restaurants, cafes, and bars I've worked with have used their tours to showcase atmosphere, increase bookings, and bring in more footfall, especially from people searching nearby. It's a proven way to make a great first impression.</p>
 
