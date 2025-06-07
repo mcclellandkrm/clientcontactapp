@@ -108,7 +108,7 @@ export const emailSignature = `
         <img src="https://karlmcclelland.com/sig/voucher_logo.png" width="50" height="50" style="border: none; vertical-align: middle; margin-bottom: 5px;">
       </a>
       <div class="sig-text" style="font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">
-        Recommend a business that becomes a virtual tour client and receive £50 in M&S vouchers as a thank you!
+        Recommend a business that becomes a virtual tour client and receive a £50 M&S voucher as a thank you!
       </div>
     </td>
   </tr>
