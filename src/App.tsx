@@ -121,6 +121,7 @@ const App: React.FC = () => {
           emailTemplates={emailTemplates}
           selectedTemplateId={selectedTemplateId}
           onTemplateChange={handleEmailTemplateChange}
+          onBack={() => setScreen('menu')}
         />
       )}
 
