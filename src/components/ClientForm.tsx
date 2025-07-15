@@ -5,9 +5,10 @@ import logo from '../360spaces_logo.svg';
 type ClientFormProps = {
   onChange: (details: ClientDetails) => void;
   onNext: () => void;
-  emailTemplates: { id: string; subject: string; label: string }[]; // <-- add label here
+  emailTemplates: { id: string; subject: string; label: string }[];
   selectedTemplateId: string;
   onTemplateChange: (id: string) => void;
+  onBack: () => void; // <-- Added onBack prop
 };
 
 const initialState: ClientDetails = {
@@ -20,7 +21,7 @@ const initialState: ClientDetails = {
   business_type: '',
   business_location: '',
   return_date: '',
-  copy_to: '', // <-- Add this line
+  copy_to: '',
 };
 
 const ClientForm: React.FC<ClientFormProps> = ({
@@ -28,10 +29,10 @@ const ClientForm: React.FC<ClientFormProps> = ({
   onNext,
   emailTemplates,
   selectedTemplateId,
-  onTemplateChange
+  onTemplateChange,
+  onBack, // <-- Added here
 }) => {
   const [form, setForm] = useState(initialState);
-  const [lastAction, setLastAction] = useState<'send' | 'add' | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -53,7 +54,7 @@ const ClientForm: React.FC<ClientFormProps> = ({
     background: `url('https://karlmcclelland.com/contactapp/client_form_screen_2.png') center center / cover no-repeat`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-  padding: '0 0 0 24px', // <-- add left padding here (24px, adjust as needed)
+    padding: '0 0 0 24px',
   };
 
   const inputStyle: React.CSSProperties = {
@@ -95,12 +96,15 @@ const ClientForm: React.FC<ClientFormProps> = ({
       }}
     >
       <div style={{
-  width: 350,
-  display: 'flex',
-  flexDirection: 'column',
-  padding: '0.5em 0', // or adjust as needed
-  alignItems: 'center',
-}}>
+        width: 350,
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '0.5em 0',
+        alignItems: 'center',
+      }}>
+        <button type="button" onClick={onBack} style={{ ...buttonStyle, marginBottom: 12, background: '#eee', color: '#333' }}>
+          Back to Menu
+        </button>
         {/* <img src={logo} alt="360spaces Logo" style={{ height: 40, marginBottom: 24 }} /> */}
         {/* <h2 style={{ margin: '0 0 1em 0', fontWeight: 600, color: '#fff' }}>Enter Client</h2> */}
         <input
@@ -175,7 +179,6 @@ const ClientForm: React.FC<ClientFormProps> = ({
           style={inputStyle}
           type="date"
         />
-        
         <select
           value={selectedTemplateId}
           onChange={e => onTemplateChange(e.target.value)}
@@ -194,12 +197,4 @@ const ClientForm: React.FC<ClientFormProps> = ({
           onChange={handleChange}
           style={{ ...inputStyle, minHeight: 60 }}
         />
-        <button type="submit" style={buttonStyle}>
-          add and send email
-        </button>
-      </div>
-    </form>
-  );
-};
-
-export default ClientForm;
+        <button type="submit" style
