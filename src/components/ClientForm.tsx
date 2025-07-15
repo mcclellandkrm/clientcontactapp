@@ -197,4 +197,12 @@ const ClientForm: React.FC<ClientFormProps> = ({
           onChange={handleChange}
           style={{ ...inputStyle, minHeight: 60 }}
         />
-        <button type="submit" style
+                <button type="submit" style={buttonStyle}>
+          add and send email
+        </button>
+      </div>
+    </form>
+  );
+};
+
+export default ClientForm;
