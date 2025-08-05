@@ -54,7 +54,7 @@ const App: React.FC = () => {
       if (error) throw error;
 
       // Send email via your backend
-      const response = await fetch('https://clientcontactapp-1.onrender.com/send-email', {
+      const response = await fetch('https://clientcontactapp.onrender.com/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
