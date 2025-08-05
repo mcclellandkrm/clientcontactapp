@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY); // use environment variab
 
 const app = express();
 app.use(cors({
-  origin: 'https://magical-beignet-f0bfea.netlify.app'
+  origin: 'https://clientcontact-v2.netlify.app'
 }));
 app.use(express.json());
 
