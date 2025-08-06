@@ -2,9 +2,9 @@
   "name": "client-intro-app",
   "version": "1.0.0",
   "description": "A web application for sending client introduction emails to 360spaces.",
-  "main": "src/index.tsx",
+  "main": "server/send-email.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/send-email.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
