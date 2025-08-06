@@ -22,13 +22,13 @@ app.post('/send-email', async (req, res) => {
   console.log('From: karl@360spaces.co.uk');
   
   try {
-    const data = await resend.emails.send({
-      from: 'karl@www.360spaces.co.uk',
-      to,
-      cc: cc && cc.length ? cc : undefined,
-      subject,
-      html: body,
-    });
+  const data = await resend.emails.send({
+    from: 'karl@360spaces.co.uk', // ← Changed from 'karl@www.360spaces.co.uk'
+    to,
+    cc: cc && cc.length ? cc : undefined,
+    subject,
+    html: body,
+  });
     
     console.log('✅ Resend SUCCESS:', data);
     res.status(200).json({ success: true, data });
