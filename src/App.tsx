@@ -54,16 +54,16 @@ const App: React.FC = () => {
       if (error) throw error;
 
       // Send email via your backend
-      const response = await fetch('https://clientcontactapp.onrender.com/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          to,
-          cc: copy_to,
-          subject,
-          body,
-        }),
-      });
+      const response = await fetch('https://clientcontactapp-ryby.onrender.com/send-email', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    to,
+    cc: copy_to,
+    subject,
+    body,
+  }),
+});
       if (!response.ok) {
         const errData = await response.json();
         throw new Error(errData.error || 'Failed to send email');
