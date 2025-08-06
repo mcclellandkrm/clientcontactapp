@@ -23,8 +23,7 @@ app.post('/send-email', async (req, res) => {
   
   try {
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-reply_to: 'karl@360spaces.co.uk',
+      from: 'karl@360spaces.co.uk',
       to,
       cc: cc && cc.length ? cc : undefined,
       subject,
