@@ -1,3 +1,15 @@
+const express = require('express');
+const cors = require('cors');
+const { Resend } = require('resend');
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+const app = express();
+app.use(cors({
+  origin: 'https://clientcontact-v2.netlify.app'
+}));
+app.use(express.json());
+
 app.post('/send-email', async (req, res) => {
   const { to, subject, body, cc } = req.body;
   
@@ -26,3 +38,5 @@ app.post('/send-email', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+app.listen(3001, () => console.log('Email API running on port 3001'));
