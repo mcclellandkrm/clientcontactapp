@@ -17,13 +17,13 @@ app.post('/send-email', async (req, res) => {
   
   try {
     // Use Gmail SMTP (simpler setup)
-    const transporter = nodemailer.createTransporter({
-      service: 'gmail',
-      auth: {
-        user: process.env.GMAIL_USER, // your gmail
-        pass: process.env.GMAIL_APP_PASSWORD // app password
-      }
-    });
+    const transporter = nodemailer.createTransport({  // ← Remove the 'er'
+  service: 'gmail',
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD
+  }
+});
 
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
