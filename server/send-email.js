@@ -1,8 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { Resend } = require('resend');
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+const nodemailer = require('nodemailer');
 
 const app = express();
 app.use(cors({
@@ -13,31 +11,36 @@ app.use(express.json());
 app.post('/send-email', async (req, res) => {
   const { to, subject, body, cc } = req.body;
   
-  // Add debugging
   console.log('=== EMAIL REQUEST ===');
-  console.log('API Key exists:', !!process.env.RESEND_API_KEY);
   console.log('To:', to);
-  console.log('CC:', cc);
   console.log('Subject:', subject);
-  console.log('From: karl@360spaces.co.uk');
   
   try {
-  const data = await resend.emails.send({
-    from: 'onboarding@resend.dev',
-    reply_to: 'karl@360spaces.co.uk',
-    to,
-    cc: cc && cc.length ? cc : undefined,
-    subject,
-    html: body,
-  });
+    // Use Gmail SMTP (simpler setup)
+    const transporter = nodemailer.createTransporter({
+      service: 'gmail',
+      auth: {
+        user: process.env.GMAIL_USER, // your gmail
+        pass: process.env.GMAIL_APP_PASSWORD // app password
+      }
+    });
+
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to,
+      cc,
+      subject,
+      html: body,
+      replyTo: 'karl@360spaces.co.uk'
+    });
     
-    console.log('✅ Resend SUCCESS:', data);
-    res.status(200).json({ success: true, data });
+    console.log('✅ Email sent successfully');
+    res.status(200).json({ success: true });
   } catch (err) {
-    console.log('❌ Resend ERROR:', err.message);
-    console.log('Full error:', err);
+    console.log('❌ Email error:', err.message);
     res.status(500).json({ error: err.message });
   }
 });
 
-app.listen(3001, () => console.log('Email API running on port 3001'));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Email API running on port ${PORT}`));
